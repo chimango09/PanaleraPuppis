@@ -1,0 +1,192 @@
+/* Comentario */
+/* Fuente Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+#logoPuppis img {
+    width: 150px;
+    height: auto;
+}
+
+.bg-navbar-style{
+    background-color: #ffd72d;
+    font-family: "inter" , sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* ----------------------collage------------------- */
+.collage-cat{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "cat-ingresos cat-invierno"
+    "cat-ingresos cat-descuento";
+    justify-items: center;
+    gap: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+.btn-ingresos{
+    width: 100%;
+    height: 310px;
+    background-image:url(../assets/nuevacoleccion.jpg);
+    border: none;
+    grid-area: cat-ingresos;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn-descuento{
+    width: 100%;
+    height: 150px;
+    background-image: url(../assets/oferta.jpg);
+    border: none;
+    grid-area: cat-descuento;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn-invierno{
+    width: 100%;
+    height: 150px;
+    background-image: url(../assets/invierno.jpg);
+    border: none;
+    grid-area: cat-invierno;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.prod-destacados{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 20px;
+}
+
+.estilo-card{
+    align-items: center;
+    font-family: "inter",sans-serif;
+    justify-content: center;
+}
+.titulo-card{
+    font-size: 18px;
+}
+
+
+.img-tamaño {
+    height: 85%;
+    width: 85%;
+
+}
+
+.nav-pag{
+    margin-top: 20px;
+    font-family: "inter",sans-serif;
+}
+/*
+.li-class{
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    color: black;
+}
+.link-class{
+    text-decoration: none;
+    color: black;
+}
+.collage-cat h2{
+    font-family: "inter",sans-serif;
+    font-size: 20px;
+    color: black;
+} */
+
+/* -------------------Header-------------------- */
+/* .header-class{
+    background-color: #ffd72d;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-class h1{
+    font-family: "inter",sans-serif;
+    font-size: 25px;
+    color: black;
+    display: none;
+}
+
+.header-class nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+} */
+/* ---------------------------------------------- */
+
+/* -------------------Foother------------------- */
+.footer-class{
+    background-color: lightgray;
+}
+.footer-class p {
+    font-family: "inter",sans-serif;
+}
+.footer-class ul{
+    font-family: "inter",sans-serif;
+    font-size: 15px;
+}
+/* ---------------------------------------------- */
+
+/* .prod-destacados h2{
+    font-family: "inter",sans-serif;
+    font-size: 20px;
+    color: black;
+}
+.product-card h4{
+    font-family: "inter" , sans-serif;
+    font-size: 18px;
+    color: black;
+}
+.product-card p{
+    font-family: "inter",sans-serif;
+    font-size: 15px;
+    color: black;
+}
+.product-card h5{
+    font-family: "inter",sans-serif;
+    font-size: 12px;
+    color: black;
+}
+.product-card img{
+    width: 150px;
+    height: auto;
+}
+.categorias-class h2{
+    font-family: "inter", sans-serif;
+    font-size: 20px;
+    color: black;
+}
+.form-class{
+    font-family: "inter", sans-serif;
+    font-size: 15px;
+    color: black;
+}
+ */
+@media (max-width: 576px) {
+    .collage-cat{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "cat-ingresos"
+        "cat-invierno"
+        "cat-descuento";
+    }
+    .btn-ingresos{
+        height: 150px;
+    }
+}
