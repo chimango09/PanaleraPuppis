@@ -30,7 +30,6 @@
     gap: 10px;
     margin-left: 100px;
     margin-right: 100px;
-
 }
 .btn-ingresos{
     width: 100%;
@@ -91,6 +90,55 @@
     margin-top: 20px;
     font-family: "inter",sans-serif;
 }
+.ofertas1-class{
+    gap:20px;
+    margin: 20px;
+}
+
+.categorias-class{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+    margin: 20px;
+    justify-items: center;
+}
+
+.categorias-class button {
+    border: none;
+    width: 90%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    font-family: "inter",sans-serif;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.btn-pañales{
+    background-image: url(../assets/cat-pañales.png);
+    
+}
+.btn-mamaderas{
+    background-image: url(../assets/cat-mamaderas.png);
+}
+.btn-higiene{
+    background-image: url(../assets/cat-higiene.png);
+}
+.btn-perfumeria{
+    background-image: url(../assets/cat-perfumes.png);
+}
+.btn-ropa{
+    background-image: url(../assets/cat-ropa.png);
+}
+.btn-leches{
+    background-image: url(../assets/cat-leches.png);
+}
+/* .ofertas-class{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+} */
 /*
 .li-class{
     list-style: none;
@@ -185,6 +233,7 @@
         "cat-ingresos"
         "cat-invierno"
         "cat-descuento";
+        margin: 20px;
     }
     .btn-ingresos{
         height: 150px;
