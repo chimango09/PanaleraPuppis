@@ -143,49 +143,6 @@
     background-image: url(../assets/cat-leches.png);
 }
 
-/* .ofertas-class{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-} */
-/*
-.li-class{
-    list-style: none;
-    font-family: "Inter", sans-serif;
-    color: black;
-}
-.link-class{
-    text-decoration: none;
-    color: black;
-}
-.collage-cat h2{
-    font-family: "inter",sans-serif;
-    font-size: 20px;
-    color: black;
-} */
-
-/* -------------------Header-------------------- */
-/* .header-class{
-    background-color: #ffd72d;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.header-class h1{
-    font-family: "inter",sans-serif;
-    font-size: 25px;
-    color: black;
-    display: none;
-}
-
-.header-class nav ul{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-} */
-/* ---------------------------------------------- */
-
 /* -------------------Foother------------------- */
 .footer-class{
     background-color: lightgray;
@@ -197,43 +154,7 @@
     font-family: "inter",sans-serif;
     font-size: 15px;
 }
-/* ---------------------------------------------- */
 
-/* .prod-destacados h2{
-    font-family: "inter",sans-serif;
-    font-size: 20px;
-    color: black;
-}
-.product-card h4{
-    font-family: "inter" , sans-serif;
-    font-size: 18px;
-    color: black;
-}
-.product-card p{
-    font-family: "inter",sans-serif;
-    font-size: 15px;
-    color: black;
-}
-.product-card h5{
-    font-family: "inter",sans-serif;
-    font-size: 12px;
-    color: black;
-}
-.product-card img{
-    width: 150px;
-    height: auto;
-}
-.categorias-class h2{
-    font-family: "inter", sans-serif;
-    font-size: 20px;
-    color: black;
-}
-.form-class{
-    font-family: "inter", sans-serif;
-    font-size: 15px;
-    color: black;
-}
- */
 @media (max-width: 576px) {
     .collage-cat{
         grid-template-columns: 1fr;
