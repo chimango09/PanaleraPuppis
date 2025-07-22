@@ -1,26 +1,26 @@
-/* Estilo para la card personalizada */
+
 .card-personalizada {
-    width: 100%; /* Ocupa el 100% del espacio disponible en su contenedor */
-    max-width: 100%; /* Aseguramos que la card no se estire más allá del contenedor */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
     overflow: hidden; /* Evita que los elementos sobresalgan de los bordes */
 }
 
-/* Estilo de la imagen */
+
 .img-tamaño {
     width: auto;
-    height: 250px; /* Ajustamos la altura de las imágenes para que sean más consistentes */
-    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+    height: 250px; 
+    object-fit: cover; 
     
 }
 
-/* Ajuste para el texto de la card */
-.card-body {
-    padding: 15px; /* Más espacio interno en las cards */
+
+.cuerpo-card {
+    padding: 15px; 
 }
 
-.card-title {
+.titulo-card {
     font-size: 18px;
     font-weight: bold;
     margin-top: 10px;
@@ -38,10 +38,15 @@
     margin: 5px 0;
 }
 
-.btn-primary {
-    width: 100%; /* Hacemos que el botón ocupe el 100% del ancho */
+.estilo-btn {
+    width: 100%; 
     text-align: center;
     padding: 10px;
+    background-color: #ffd72d;
+    font-family: "inter",sans-serif;
+}
+.estilo-btn:hover{
+    background-color: #ffe46b;
 }
 
 /* Uso de Flexbox en la fila de cards */
