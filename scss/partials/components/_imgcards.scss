@@ -1,0 +1,8 @@
+// .prod-destacados{
+//     justify-content: space-between;
+// }
+@use "./ofertcards";
+
+.layout-card-destacados{
+    @extend .layout-card-ofertas;
+}

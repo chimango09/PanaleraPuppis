@@ -64,6 +64,14 @@
   background-size: cover;
 }
 
+.estilo-card {
+  align-items: center;
+}
+.estilo-card .img-tamaño {
+  width: 50%;
+  height: 55%;
+}
+
 /* Estilo para la card personalizada */
 .card-personalizada {
   width: 100%; /* Ocupa el 100% del espacio disponible en su contenedor */
@@ -75,9 +83,9 @@
 
 /* Estilo de la imagen */
 .img-tamaño {
-  width: auto;
+  width: 50%;
   height: 250px; /* Ajustamos la altura de las imágenes para que sean más consistentes */
-  object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+  object-fit: contain; /* Asegura que la imagen cubra el área sin deformarse */
 }
 
 /* Ajuste para el texto de la card */
@@ -110,58 +118,11 @@
 }
 
 /* Uso de Flexbox en la fila de cards */
-.layout-card-ofertas, .layout-card-destacados {
+.ofertas1-class {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
 }
-.layout-card-ofertas p, .layout-card-destacados p {
-  height: 50px;
-}
 
-.categorias-class {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 30px;
-  margin: 20px;
-  justify-items: center;
-}
-
-.categorias-class button {
-  border: none;
-  width: 90%;
-  height: 150px;
-  background-size: cover;
-  background-position: center;
-  font-family: "inter", sans-serif;
-  font-weight: 500;
-  border-radius: 20px;
-}
-
-.btn-pañales {
-  background-image: url(../assets/cat-pañales.png);
-}
-
-.btn-mamaderas {
-  background-image: url(../assets/cat-mamaderas.png);
-}
-
-.btn-higiene {
-  background-image: url(../assets/cat-higiene.png);
-}
-
-.btn-perfumeria {
-  background-image: url(../assets/cat-perfumes.png);
-}
-
-.btn-ropa {
-  background-image: url(../assets/cat-ropa.png);
-}
-
-.btn-leches {
-  background-image: url(../assets/cat-leches.png);
-}
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=main.css.map */

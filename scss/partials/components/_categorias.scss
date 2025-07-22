@@ -1,0 +1,39 @@
+.categorias-class{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+    margin: 20px;
+    justify-items: center;
+}
+
+.categorias-class button {
+    border: none;
+    width: 90%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    font-family: "inter",sans-serif;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.btn-pañales{
+    background-image: url(../assets/cat-pañales.png);
+    
+}
+.btn-mamaderas{
+    background-image: url(../assets/cat-mamaderas.png);
+}
+.btn-higiene{
+    background-image: url(../assets/cat-higiene.png);
+}
+.btn-perfumeria{
+    background-image: url(../assets/cat-perfumes.png);
+}
+.btn-ropa{
+    background-image: url(../assets/cat-ropa.png);
+}
+.btn-leches{
+    background-image: url(../assets/cat-leches.png);
+}

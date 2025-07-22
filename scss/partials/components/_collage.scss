@@ -1,0 +1,46 @@
+/* ----------------------collage------------------- */
+.collage-cat{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "cat-ingresos cat-invierno"
+    "cat-ingresos cat-descuento";
+    justify-items: center;
+    gap: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: "inter",sans-serif;
+    font-weight: 600;
+}
+.btn-ingresos{
+    width: 100%;
+    height: 310px;
+    background-image:url(../assets/nuevacoleccion.jpg);
+    border: none;
+    grid-area: cat-ingresos;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn-descuento{
+    width: 100%;
+    height: 150px;
+    background-image: url(../assets/oferta.jpg);
+    border: none;
+    grid-area: cat-descuento;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn-invierno{
+    width: 100%;
+    height: 150px;
+    background-image: url(../assets/invierno.jpg);
+    border: none;
+    grid-area: cat-invierno;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
