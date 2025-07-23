@@ -1,0 +1,25 @@
+.footer-class{
+    background-color:rgb(224, 224, 224);
+    // height: 100%;
+    padding: 20px;
+}
+.redes-sociales{
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+.instagram::before{
+    padding: 10px;
+    content: url(../assets/instagram.png);
+}
+.facebook::before{
+    padding: 10px;
+    content: url(../assets/facebook.png);
+}
+.whatsapp::before{
+    padding: 10px;
+    content: url(../assets/whatsapp.png);
+}

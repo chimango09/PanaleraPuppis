@@ -1,0 +1,23 @@
+.btns-carrito{
+    margin: 10px;
+}
+
+.btns-carrito{
+    .btn1{
+        background-color: green;
+        border: none;
+    }
+    .btn1:hover{
+        background-color: rgb(0, 169, 0)
+    }
+    .btn2{
+        @extend .btn1;
+        background-color: orangered;
+        
+    }
+    .btn2:hover{
+        background-color: rgb(255, 98, 41);
+    }
+    
+
+}

@@ -40,6 +40,60 @@
   font-size: 30px;
 }
 
+.title-contacto {
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+@media (max-width: 576px) {
+  .collage-cat {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "cat-ingresos" "cat-invierno" "cat-descuento";
+    margin: 20px;
+  }
+  .btn-ingresos {
+    height: 150px;
+  }
+  .categorias-class {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+.footer-class {
+  background-color: rgb(224, 224, 224);
+  padding: 20px;
+}
+
+.redes-sociales ul {
+  list-style: none;
+}
+.redes-sociales a {
+  text-decoration: none;
+}
+
+.instagram::before {
+  padding: 10px;
+  content: url(../assets/instagram.png);
+}
+
+.facebook::before {
+  padding: 10px;
+  content: url(../assets/facebook.png);
+}
+
+.whatsapp::before {
+  padding: 10px;
+  content: url(../assets/whatsapp.png);
+}
+
+.estilo-pnav {
+  font-family: "inter", sans-serif;
+  color: black;
+}
+
 #logoPuppis img {
   width: 150px;
   height: auto;
@@ -68,7 +122,7 @@
 .btn-ingresos {
   width: 100%;
   height: 310px;
-  background-image: url(../assets/nuevacoleccion.jpg);
+  background-image: url(../assets/nuevacoleccion.png);
   border: none;
   grid-area: cat-ingresos;
   background-position: center;
@@ -82,7 +136,7 @@
 .btn-descuento {
   width: 100%;
   height: 150px;
-  background-image: url(../assets/oferta.jpg);
+  background-image: url(../assets/oferta.png);
   border: none;
   grid-area: cat-descuento;
   background-position: center;
@@ -96,12 +150,12 @@
 .btn-invierno {
   width: 100%;
   height: 150px;
-  background-image: url(../assets/invierno.jpg);
+  background-image: url(../assets/invierno3.png);
   border: none;
   grid-area: cat-invierno;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   position: relative;
@@ -126,8 +180,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 16px;
-  font-weight: 450;
+  font-size: 20px;
+  font-weight: 300;
   z-index: 2;
 }
 
@@ -155,9 +209,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 16px;
-  font-weight: 450;
+  font-size: 20px;
+  font-weight: 300;
   z-index: 2;
+  text-shadow: grey;
 }
 
 .btn-descuento:hover::after {
@@ -184,8 +239,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 16px;
-  font-weight: 450;
+  font-size: 20px;
+  font-weight: 300;
   z-index: 2;
 }
 
@@ -194,6 +249,17 @@
   height: 100%;
 }
 
+@media (max-width: 576px) {
+  .collage-cat {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "cat-ingresos" "cat-invierno" "cat-descuento";
+    margin: 20px;
+  }
+  .btn-ingresos {
+    height: 150px;
+  }
+}
 .card-personalizada {
   width: 100%;
   max-width: 100%;
@@ -267,34 +333,80 @@
   width: 90%;
   height: 150px;
   background-size: cover;
-  background-position: center;
   font-family: "inter", sans-serif;
-  font-weight: 500;
+  font-size: 30px;
+  font-weight: 300;
   border-radius: 20px;
+  transition: transform 1.5s ease;
+}
+
+.categorias-class button:hover {
+  transform: scale(1.1);
 }
 
 .btn-pañales {
-  background-image: url(../assets/cat-pañales.png);
+  background-image: url(../assets/panales2.png);
 }
 
 .btn-mamaderas {
-  background-image: url(../assets/cat-mamaderas.png);
+  background-image: url(../assets/cat-mamaderas2.png);
 }
 
 .btn-higiene {
-  background-image: url(../assets/cat-higiene.png);
+  background-image: url(../assets/cat-higiene2.png);
 }
 
 .btn-perfumeria {
-  background-image: url(../assets/cat-perfumes.png);
+  background-image: url(../assets/cat-perfumes2.png);
 }
 
 .btn-ropa {
-  background-image: url(../assets/cat-ropa.png);
+  background-image: url(../assets/cat-ropa2.png);
 }
 
 .btn-leches {
-  background-image: url(../assets/cat-leches.png);
+  background-image: url(../assets/cat-leches2.png);
+}
+
+@media (max-width: 576px) {
+  .categorias-class {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+.btns-carrito {
+  margin: 10px;
+}
+
+.btns-carrito .btn1, .btns-carrito .btn2 {
+  background-color: green;
+  border: none;
+}
+.btns-carrito .btn1:hover, .btns-carrito .btn2:hover {
+  background-color: rgb(0, 169, 0);
+}
+.btns-carrito .btn2 {
+  background-color: orangered;
+}
+.btns-carrito .btn2:hover {
+  background-color: rgb(255, 98, 41);
+}
+
+.msj-contact {
+  padding: 80px;
+  text-align: center;
+}
+
+.color-btn {
+  background-color: rgb(93, 226, 93);
+}
+
+.color-btn:hover {
+  background-color: rgb(93, 255, 93);
+}
+
+.msj-contact {
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=styles.css.map */

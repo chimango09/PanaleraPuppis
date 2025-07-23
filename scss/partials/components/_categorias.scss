@@ -1,3 +1,4 @@
+
 .categorias-class{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -11,29 +12,43 @@
     border: none;
     width: 90%;
     height: 150px;
-    background-size: cover;
-    background-position: center;
+    background-size:cover;
+    // background-position: center;
     font-family: "inter",sans-serif;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 300;
     border-radius: 20px;
+    transition: transform 1.5s ease;
+    
+}
+
+.categorias-class button:hover{
+    transform: scale(1.1);
 }
 
 .btn-pañales{
-    background-image: url(../assets/cat-pañales.png);
+    background-image: url(../assets/panales2.png);
     
 }
 .btn-mamaderas{
-    background-image: url(../assets/cat-mamaderas.png);
+    background-image: url(../assets/cat-mamaderas2.png);
 }
 .btn-higiene{
-    background-image: url(../assets/cat-higiene.png);
+    background-image: url(../assets/cat-higiene2.png);
 }
 .btn-perfumeria{
-    background-image: url(../assets/cat-perfumes.png);
+    background-image: url(../assets/cat-perfumes2.png);
 }
 .btn-ropa{
-    background-image: url(../assets/cat-ropa.png);
+    background-image: url(../assets/cat-ropa2.png);
 }
 .btn-leches{
-    background-image: url(../assets/cat-leches.png);
+    background-image: url(../assets/cat-leches2.png);
+}
+
+@media (max-width: 576px) {
+.categorias-class{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+    }
 }
