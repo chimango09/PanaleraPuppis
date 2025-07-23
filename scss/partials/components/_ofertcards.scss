@@ -1,0 +1,63 @@
+
+.card-personalizada {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; /* Evita que los elementos sobresalgan de los bordes */
+}
+
+
+.img-tamaño {
+    width: auto;
+    height: 250px; 
+    object-fit: cover; 
+    
+}
+
+
+.cuerpo-card {
+    padding: 15px; 
+}
+
+.titulo-card {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.card h5 {
+    font-size: 16px;
+    color: #000;
+    margin: 5px 0;
+}
+
+.estilo-btn {
+    width: 100%; 
+    text-align: center;
+    padding: 10px;
+    background-color: #ffd72d;
+    font-family: "inter",sans-serif;
+}
+.estilo-btn:hover{
+    background-color: #ffe46b;
+}
+
+/* Uso de Flexbox en la fila de cards */
+.layout-card-ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    p{
+        height: 50px;
+    }
+}
+
+

@@ -1,0 +1,13 @@
+@use "../utilities/variables";
+
+#logoPuppis img {
+    width: 150px;
+    height: auto;
+}
+
+.bg-navbar-style {
+    background-color: variables.$colorpuppis;
+    font-family: "inter" , sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}

@@ -1,0 +1,20 @@
+// ------------------------ Media Qeries ----------------------------
+
+@media (max-width: 576px) {
+    .collage-cat{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "cat-ingresos"
+        "cat-invierno"
+        "cat-descuento";
+        margin: 20px;
+    }
+    .btn-ingresos{
+        height: 150px;
+    }
+    .categorias-class{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+    }
+}

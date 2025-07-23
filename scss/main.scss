@@ -1,0 +1,15 @@
+@use "./partials/base/reset";
+@use"./partials/base/tipografia";
+@use "./partials/base/titulos";
+@use "./partials/base/mediaqueris";
+
+@use"./partials/components/footer";
+@use"./partials/components/pnavigation";
+@use "./partials/components/navbar";
+@use "./partials/components/collage";
+@use "./partials/components/imgcards";
+@use "./partials/components/ofertcards";
+@use "./partials/components/categorias";
+@use "./partials/components/carrito";
+@use "./partials/components/contacto";
+

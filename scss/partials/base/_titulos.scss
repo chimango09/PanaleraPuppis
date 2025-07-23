@@ -1,0 +1,25 @@
+@mixin title-style($aling,$margin,$padding,$fontsize){
+    text-align: $aling;
+    margin:     $margin;
+    padding:    $padding;
+    font-size:  $fontsize;
+};
+
+.title-ofertas{
+    @include title-style(center,5px ,10px ,30px )
+}
+.title-index{
+    @include title-style(start,5px ,10px ,30px )
+}
+.subtitle-dest{
+    @include title-style(center,5px ,10px ,25px )
+}
+.title-cat{
+    @include title-style(center,5px ,10px ,30px )
+}
+.title-carrito{
+    @include title-style(center,5px ,10px ,30px )
+}
+.title-contacto{
+    @include title-style(center,5px ,10px ,30px )
+}
