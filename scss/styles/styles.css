@@ -387,7 +387,7 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 20px;
 }
 
 .btn-huggies, .btn-philips, .btn-pampers, .btn-nestle, .btn-babysec, .btn-estrella {
@@ -421,6 +421,7 @@
 @media (max-width: 1250px) {
   .cont-marcas {
     flex-direction: column;
+    justify-content: center;
   }
 }
 .btns-carrito {

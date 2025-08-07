@@ -1,5 +1,48 @@
+.marcas{
+    margin-bottom: 50px;
+}
+.marcas-descripcion{
+    padding: 50px;
+}
+
 .cont-marcas{
     display: flex;
     flex-direction: row;
-    
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.btn-huggies{
+        height: 350px;
+        width:  350px;
+        background-image: url(../assets/huggies-marca.png);
+        background-size: cover;
+        border: none;
+    }
+.btn-estrella{
+    @extend .btn-huggies;
+    background-image: url(../assets/estrella.png);
+}
+.btn-babysec{
+    @extend .btn-huggies;
+    background-image: url(../assets/babysec-marca.jpg);
+}   
+.btn-nestle{
+    @extend .btn-huggies;
+    background-image: url(../assets/nestle.png);
+}
+.btn-pampers{
+    @extend .btn-huggies;
+    background-image: url(../assets/pampers-marca.png);
+}
+.btn-philips{
+    @extend .btn-huggies;
+    background-image: url(../assets/philips.jpg);
+}
+
+@media (max-width: 1250px) {
+  .cont-marcas{
+    flex-direction: column;
+    justify-content: center;
+  }
 }
