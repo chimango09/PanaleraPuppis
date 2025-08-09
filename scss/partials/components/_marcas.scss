@@ -40,9 +40,18 @@
     background-image: url(../assets/philips.jpg);
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1000px) {
   .cont-marcas{
-    flex-direction: column;
     justify-content: center;
   }
+  .btn-huggies{
+        height: 250px;
+        width:  250px;
+        }
+}
+@media (max-width:750px){
+    .cont-marcas{
+    flex-direction: column;
+    align-content: center;
+    }
 }

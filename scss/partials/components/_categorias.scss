@@ -13,7 +13,6 @@
     width: 90%;
     height: 150px;
     background-size:cover;
-    // background-position: center;
     font-family: "inter",sans-serif;
     font-size: 30px;
     font-weight: 300;
@@ -45,8 +44,12 @@
 .btn-leches{
     background-image: url(../assets/cat-leches2.png);
 }
+.cont-marcas{
+    display: flex;
+    flex-direction: row;
+}
 
-@media (max-width: 576px) {
+@media (max-width: 700px) {
 .categorias-class{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6,1fr);

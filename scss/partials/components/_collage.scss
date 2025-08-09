@@ -154,7 +154,7 @@
 
 // ------------------------ Media Qeries ----------------------------
 
-@media (max-width: 576px) {
+@media (max-width: 750px) {
     .collage-cat{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3,1fr);
@@ -167,4 +167,5 @@
     .btn-ingresos{
         height: 150px;
     }
+    
 }

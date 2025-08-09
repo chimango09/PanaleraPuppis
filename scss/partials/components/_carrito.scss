@@ -15,7 +15,6 @@ main{
 }
 .cards-carrito{
     grid-area: cards-carrito;
-    position: relative;
     
 }
 .total-carrito{
@@ -90,12 +89,9 @@ main{
 }
 
 .btns-carrito{
-    margin: 10px;
-}
-
-.btns-carrito{
     grid-area: btns-carrito;
-    align-self: flex-end;
+    justify-self: end;
+    align-self: end;
     .btn1{
         background-color: green;
         border: none;
@@ -115,7 +111,51 @@ main{
     }
 }
 
-.sug-carrito{
+.sug-cards{
     margin: 10px;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card-personalizada{
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+.interes{
+    text-align: center;
+}
+
+@media (max-width:1200px){
+    .cont-grid{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .cards-carrito{
+        order:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .total-carrito{
+        order: 2;
+        align-self: center;
+        width: 100%;
+    }
+    .btns-carrito{
+        order:3;
+        width: 100%;
+        .btn1{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .btn2{
+            width: 100%;
+        }
+    }
 }

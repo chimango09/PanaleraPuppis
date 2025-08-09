@@ -1,8 +1,16 @@
-// .prod-destacados{
-//     justify-content: space-between;
-// }
-@use "./ofertcards";
-
-.layout-card-destacados{
-    @extend .layout-card-ofertas;
+.layout-destacados{
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+    justify-content: center;
+    .card-personalizada{
+        margin: 10px;
+        padding: 10px;
+    }
+}
+@media (max-width:1000px){
+    .layout-destacados{
+        flex-direction: column;
+        justify-self: center;
+    }
 }

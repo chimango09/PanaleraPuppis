@@ -1,11 +1,13 @@
 footer{
     background-color:rgb(224, 224, 224);
-    // height: 100%;
     padding: 20px;
 }
 .contenido-footer{
     display: flex;
     justify-content: space-between;
+}
+.title-redes{
+    font-weight: 500;
 }
 .redes-sociales{
     ul {
@@ -17,8 +19,19 @@ footer{
     }
 }
 .dir{
+    @extend .redes-sociales;
     justify-self: end;
 }
+.e-mail::before{
+    padding: 10px;
+    content: url(../assets/mail.png);
+}
+
+.direccion::before{
+    padding: 10px;
+    content: url(../assets/ubi.png);
+}
+
 .instagram::before{
     padding: 10px;
     content: url(../assets/instagram.png);
@@ -30,4 +43,10 @@ footer{
 .whatsapp::before{
     padding: 10px;
     content: url(../assets/whatsapp.png);
+}
+
+@media (max-width:750px){
+    .contenido-footer{
+        flex-direction: column;
+    }
 }
