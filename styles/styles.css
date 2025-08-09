@@ -62,9 +62,14 @@
     grid-template-rows: repeat(6, 1fr);
   }
 }
-.footer-class {
+footer {
   background-color: rgb(224, 224, 224);
   padding: 20px;
+}
+
+.contenido-footer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .redes-sociales ul {
@@ -72,6 +77,11 @@
 }
 .redes-sociales a {
   text-decoration: none;
+  color: black;
+}
+
+.dir {
+  justify-self: end;
 }
 
 .instagram::before {
@@ -387,7 +397,7 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 20px;
 }
 
 .btn-huggies, .btn-philips, .btn-pampers, .btn-nestle, .btn-babysec, .btn-estrella {
@@ -421,15 +431,111 @@
 @media (max-width: 1250px) {
   .cont-marcas {
     flex-direction: column;
+    justify-content: center;
   }
 }
+main h3 {
+  padding-left: 20px;
+  text-align: start;
+}
+
+.cont-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60% 40%;
+  padding: 20px;
+  grid-template-areas: "cards-carrito total-carrito" "cards-carrito btns-carrito";
+}
+
+.cards-carrito {
+  grid-area: cards-carrito;
+  position: relative;
+}
+
+.total-carrito {
+  grid-area: total-carrito;
+  height: 100px;
+  width: 500px;
+  background-color: rgb(205, 205, 205);
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 600px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  align-content: center;
+  justify-self: end;
+}
+
+.mi-card {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 600px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mi-card-img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.mi-card-contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mi-card-titulo {
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+
+.mi-card-texto {
+  font-size: 14px;
+  margin: 0 0 8px;
+}
+
+.mi-card-precio {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 12px;
+}
+
+.mi-card-btn {
+  align-self: start;
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mi-card-btn:hover {
+  background-color: #c82333;
+}
+
 .btns-carrito {
   margin: 10px;
 }
 
+.btns-carrito {
+  grid-area: btns-carrito;
+  align-self: flex-end;
+}
 .btns-carrito .btn1, .btns-carrito .btn2 {
   background-color: green;
   border: none;
+  width: 200px;
+  height: 50px;
 }
 .btns-carrito .btn1:hover, .btns-carrito .btn2:hover {
   background-color: rgb(0, 169, 0);
@@ -439,6 +545,11 @@
 }
 .btns-carrito .btn2:hover {
   background-color: rgb(255, 98, 41);
+}
+
+.sug-carrito {
+  margin: 10px;
+  padding: 10px;
 }
 
 .msj-contact {
@@ -456,6 +567,24 @@
 
 .msj-contact {
   font-size: 25px;
+}
+
+.acordeon-style {
+  font-weight: 500;
+}
+
+.form-consulta {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.form-consulta h4 {
+  text-align: center;
+}
+.form-consulta .cont-form {
+  padding: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

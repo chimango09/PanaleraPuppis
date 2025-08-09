@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <header class="header-class">
+    <header>
         <nav class="navbar navbar-expand-lg bg-navbar-style">
             <div class="container-fluid">
                 <div id="logoPuppis">
@@ -43,37 +43,93 @@
 
     <main>
         <div class="container">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Su correo electronico</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+            <div class="preg-frec">
+                <h4>Preguntas Frecuentes</h4>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed acordeon-style" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            1. ¿Qué marcas de pañales venden?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Trabajamos con las marcas más reconocidas y confiables como Huggies, Pampers, Babysec, entre otras, para garantizar calidad y comodidad para tu bebé.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed acordeon-style" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            2. ¿Hacen envíos a domicilio?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Sí. Realizamos envíos en la ciudad y zonas cercanas. El costo y tiempo de entrega dependen de la ubicación.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed acordeon-style" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            3. ¿Cuál es el horario de atención?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">De lunes a sábado de 9:00 a 19:00 hs. Los domingos y feriados permanecemos cerrados.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed acordeon-style" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            4. ¿Tienen promociones o descuentos?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Sí. Ofrecemos promociones semanales, combos especiales y descuentos por compras por mayor. Te recomendamos seguirnos en redes para enterarte.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="form-consulta">
+                <h4>Mandanos tu consulta!</h4>
+                <div class="cont-form">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Su correo electronico</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn color-btn" type="button">Enviar Mensaje</button>
+                    </div>
+                    <p class=" msj-contact">
+                        ¡ Tu consulta no molesta, pregunta lo que quieras y a la brevedad te estaremos respondiendo. Gracias. Pañalera Puppis !
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn color-btn" type="button">Enviar Mensaje</button>
-        </div>
-        <p class=" msj-contact">
-            ¡ Tu consulta no molesta, pregunta lo que quieras y a la brevedad te estaremos respondiendo. Gracias. Pañalera Puppis !
-        </p>
     </main>
-    <footer class="footer-class">
+    <footer>
         <div>
             <p>Nuestras redes sociales</p>
         </div>
-        <div class="redes-sociales">
-            <ul>
-                <li>
-                    <a href="" class="facebook">Facebook </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/puppis.panalera/" class="instagram">Instagram</a>
-                </li>
-                <li><a href="" class="whatsapp">Whatsapp</a></li>
-            </ul>
-        </div>
+        <div class="contenido-footer">
+            <div class="redes-sociales">
+                <ul>
+                    <li>
+                        <a href="" class="facebook">Facebook </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/puppis.panalera/" class="instagram">Instagram</a>
+                    </li>
+                    <li><a href="" class="whatsapp">Whatsapp</a></li>
+                </ul>
+            </div>
+            <div class="dir">
+                <p>Mail: matiasvaldi1818@gmail.com</p>
+                <p>Ubicacion: Junin, Mendoza</p>
+            </div>
+        </div>    
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
