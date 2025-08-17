@@ -235,6 +235,9 @@ footer {
   .btn-ingresos {
     height: 150px;
   }
+  .texto-btn {
+    font-size: 12px;
+  }
 }
 .layout-destacados {
   display: flex;
