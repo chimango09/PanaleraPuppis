@@ -1,3 +1,5 @@
+@use "../utilities/variables";
+@use"../utilities/extends";
 footer{
     background-color:rgb(224, 224, 224);
     padding: 20px;
@@ -9,39 +11,31 @@ footer{
 .title-redes{
     font-weight: 500;
 }
-.redes-sociales{
-    ul {
-        list-style: none;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-    }
-}
+
 .dir{
     @extend .redes-sociales;
     justify-self: end;
 }
 .e-mail::before{
-    padding: 10px;
+    padding: variables.$padd-redes;
     content: url(../assets/mail.png);
 }
 
 .direccion::before{
-    padding: 10px;
+    padding: variables.$padd-redes;
     content: url(../assets/ubi.png);
 }
 
 .instagram::before{
-    padding: 10px;
+    padding: variables.$padd-redes;
     content: url(../assets/instagram.png);
 }
 .facebook::before{
-    padding: 10px;
+    padding: variables.$padd-redes;
     content: url(../assets/facebook.png);
 }
 .whatsapp::before{
-    padding: 10px;
+    padding: variables.$padd-redes;
     content: url(../assets/whatsapp.png);
 }
 

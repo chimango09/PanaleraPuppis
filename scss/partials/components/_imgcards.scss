@@ -1,11 +1,13 @@
+@use "../utilities/variables";
+
 .layout-destacados{
     display: flex;
     margin: 10px;
     flex-direction: row;
     justify-content: center;
     .card-personalizada{
-        margin: 10px;
-        padding: 10px;
+        margin: variables.$padd-separacion;
+        padding: variables.$marg-separacion;
     }
 }
 @media (max-width:1000px){

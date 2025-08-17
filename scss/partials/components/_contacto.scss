@@ -1,3 +1,4 @@
+@use "../utilities/variables";
 .msj-contact{
     padding: 80px;
     text-align: center;
@@ -20,11 +21,20 @@
     margin-bottom: 20px;
     border: 1px solid black;
     border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: variables.$sombra;
     h4{
         text-align: center;
     }
     .cont-form{
         padding: 20px;
     }
+    font-family: variables.$fuente;
+}
+
+.texto-acordeon{
+    font-family: variables.$fuente;
+    font-size: 15px;
+}
+.titulo-consulta{
+    margin: 10px;
 }

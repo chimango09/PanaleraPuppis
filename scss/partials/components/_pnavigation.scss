@@ -1,4 +1,8 @@
-.estilo-pnav{
-    font-family: "inter",sans-serif;
-    color: black;
+@use "../utilities/variables";
+
+.estilo-nav-pag {
+    .num-color{
+        color:black;
+        font-family: variables.$fuente;
+    }  
 }

@@ -62,6 +62,60 @@
     grid-template-rows: repeat(6, 1fr);
   }
 }
+.btn-huggies, .btn-estrella, .btn-babysec, .btn-nestle, .btn-pampers, .btn-philips {
+  height: 350px;
+  width: 350px;
+  background-image: url(../assets/huggies-marca.png);
+  background-size: cover;
+  border: none;
+}
+
+.btn1, .btn2 {
+  background-color: green;
+  border: none;
+  width: 200px;
+  height: 50px;
+}
+
+.redes-sociales ul, .dir ul {
+  list-style: none;
+}
+.redes-sociales a, .dir a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-descuento, .btn-ingresos, .btn-invierno {
+  width: 100%;
+  height: 150px;
+  background-image: url(../assets/oferta.png);
+  border: none;
+  grid-area: cat-descuento;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  position: relative;
+}
+
+.btn-ingresos::after, .btn-descuento::after, .btn-invierno::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 20%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(61, 61, 61, 0.5);
+  z-index: 1;
+  transition: all 1s ease;
+}
+
+.btn-ingresos:hover::after, .btn-descuento:hover::after, .btn-invierno:hover::after {
+  height: 100%;
+}
+
 footer {
   background-color: rgb(224, 224, 224);
   padding: 20px;
@@ -74,14 +128,6 @@ footer {
 
 .title-redes {
   font-weight: 500;
-}
-
-.redes-sociales ul, .dir ul {
-  list-style: none;
-}
-.redes-sociales a, .dir a {
-  text-decoration: none;
-  color: black;
 }
 
 .dir {
@@ -118,9 +164,9 @@ footer {
     flex-direction: column;
   }
 }
-.estilo-pnav {
-  font-family: "inter", sans-serif;
+.estilo-nav-pag .num-color {
   color: black;
+  font-family: "inter", sans-serif;
 }
 
 #logoPuppis img {
@@ -130,12 +176,21 @@ footer {
 
 .bg-navbar-style {
   background-color: #ffd72d;
+}
+
+.nav-bar-style {
   font-family: "inter", sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
 
 /* ----------------------collage------------------- */
+.collage-style {
+  margin: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .collage-cat {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -149,61 +204,17 @@ footer {
 }
 
 .btn-ingresos {
-  width: 100%;
   height: 310px;
   background-image: url(../assets/nuevacoleccion.png);
-  border: none;
   grid-area: cat-ingresos;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  position: relative;
-}
-
-.btn-descuento {
-  width: 100%;
-  height: 150px;
-  background-image: url(../assets/oferta.png);
-  border: none;
-  grid-area: cat-descuento;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  position: relative;
 }
 
 .btn-invierno {
-  width: 100%;
-  height: 150px;
-  background-image: url(../assets/invierno3.png);
-  border: none;
   grid-area: cat-invierno;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  position: relative;
+  background-image: url(../assets/invierno3.png);
 }
 
-.btn-ingresos::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 20%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(61, 61, 61, 0.5);
-  z-index: 1;
-  transition: all 1s ease;
-}
-
-.btn-ingresos .texto-btn {
+.texto-btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -212,70 +223,6 @@ footer {
   font-size: 20px;
   font-weight: 300;
   z-index: 2;
-}
-
-.btn-ingresos:hover::after {
-  width: 100%;
-  height: 100%;
-}
-
-.btn-descuento::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 20%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(61, 61, 61, 0.5);
-  z-index: 1;
-  transition: all 1s ease;
-}
-
-.btn-descuento .texto-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 20px;
-  font-weight: 300;
-  z-index: 2;
-  text-shadow: grey;
-}
-
-.btn-descuento:hover::after {
-  width: 100%;
-  height: 100%;
-}
-
-.btn-invierno::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 20%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(61, 61, 61, 0.5);
-  z-index: 1;
-  transition: all 1s ease;
-}
-
-.btn-invierno .texto-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 20px;
-  font-weight: 300;
-  z-index: 2;
-}
-
-.btn-invierno:hover::after {
-  width: 100%;
-  height: 100%;
 }
 
 @media (max-width: 750px) {
@@ -320,25 +267,21 @@ footer {
   object-fit: cover;
 }
 
-.cuerpo-card {
-  padding: 15px;
-}
-
 .titulo-card {
   font-size: 18px;
   font-weight: bold;
   margin-top: 10px;
 }
 
-.card-text {
+.texto-card {
   font-size: 14px;
-  color: #555;
+  color: #555555;
   margin: 10px 0;
 }
 
-.card h5 {
+.precio-card {
   font-size: 16px;
-  color: #000;
+  color: #000000;
   margin: 5px 0;
 }
 
@@ -449,14 +392,6 @@ footer {
   gap: 20px;
 }
 
-.btn-huggies, .btn-philips, .btn-pampers, .btn-nestle, .btn-babysec, .btn-estrella {
-  height: 350px;
-  width: 350px;
-  background-image: url(../assets/huggies-marca.png);
-  background-size: cover;
-  border: none;
-}
-
 .btn-estrella {
   background-image: url(../assets/estrella.png);
 }
@@ -519,7 +454,7 @@ main h3 {
   padding: 15px;
   max-width: 600px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   align-content: center;
   justify-self: end;
 }
@@ -533,7 +468,7 @@ main h3 {
   max-width: 600px;
   margin-bottom: 20px;
   background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .mi-card-img {
@@ -585,19 +520,16 @@ main h3 {
   justify-self: end;
   align-self: end;
 }
-.btns-carrito .btn1, .btns-carrito .btn2 {
-  background-color: green;
-  border: none;
-  width: 200px;
-  height: 50px;
-}
-.btns-carrito .btn1:hover, .btns-carrito .btn2:hover {
+
+.btn1:hover, .btn2:hover {
   background-color: rgb(0, 169, 0);
 }
-.btns-carrito .btn2 {
+
+.btn2 {
   background-color: orangered;
 }
-.btns-carrito .btn2:hover {
+
+.btn2:hover {
   background-color: rgb(255, 98, 41);
 }
 
@@ -675,13 +607,23 @@ main h3 {
   margin-bottom: 20px;
   border: 1px solid black;
   border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: "inter", sans-serif;
 }
 .form-consulta h4 {
   text-align: center;
 }
 .form-consulta .cont-form {
   padding: 20px;
+}
+
+.texto-acordeon {
+  font-family: "inter", sans-serif;
+  font-size: 15px;
+}
+
+.titulo-consulta {
+  margin: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

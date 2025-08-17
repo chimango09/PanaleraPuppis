@@ -1,4 +1,4 @@
-
+@use "../utilities/variables";
 .categorias-class{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -13,7 +13,7 @@
     width: 90%;
     height: 150px;
     background-size:cover;
-    font-family: "inter",sans-serif;
+    font-family: variables.$fuente;
     font-size: 30px;
     font-weight: 300;
     border-radius: 20px;

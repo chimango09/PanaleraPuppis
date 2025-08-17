@@ -1,0 +1,68 @@
+@use "../utilities/variables";
+//Boton Marca
+.btn-huggies{
+        height: 350px;
+        width:  350px;
+        background-image: url(../assets/huggies-marca.png);
+        background-size: cover;
+        border: none;
+    }
+//Boton Compra   
+.btn1{
+        background-color: green;
+        border: none;
+        width: 200px;
+        height: 50px;
+}
+//Redes sociales
+.redes-sociales{
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+//Boton Collage
+.btn-descuento{
+    width: 100%;
+    height: 150px;
+    background-image: url(../assets/oferta.png);
+    border: none;
+    grid-area: cat-descuento;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: variables.$sombra;
+    border-radius: 5px;
+    position: relative;
+}
+
+%sombra-text-collage {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    width: 100%; 
+    height: 20%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(61, 61, 61, 0.5); 
+    z-index: 1;   // sirve para superponer elementos
+    transition: all 1s ease; 
+}
+
+%text-boton-collage{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 20px;
+        font-weight: 300;
+        z-index: 2; 
+}
+
+%expansion-vertical{
+    height: 100%;
+}

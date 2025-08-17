@@ -1,3 +1,4 @@
+@use"../utilities/extends";
 .marcas{
     margin-bottom: 50px;
 }
@@ -12,13 +13,7 @@
     flex-wrap: wrap;
     gap: 20px;
 }
-.btn-huggies{
-        height: 350px;
-        width:  350px;
-        background-image: url(../assets/huggies-marca.png);
-        background-size: cover;
-        border: none;
-    }
+
 .btn-estrella{
     @extend .btn-huggies;
     background-image: url(../assets/estrella.png);
